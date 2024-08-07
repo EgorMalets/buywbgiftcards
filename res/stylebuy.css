@@ -1,0 +1,702 @@
+html {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+    background: #66669C;
+    background-image: url(./img/buybg.png);
+    background-repeat: no-repeat;
+    background-position: right 0% bottom 100%;
+    min-height: 100%;
+    display: grid;
+    grid-template-rows: 1fr auto;
+}
+
+footer {
+    background: #111132;
+    margin-top: 250px;
+    height: 92px;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+.logo {
+    margin-left: 16px;
+}
+
+.wrapper {
+    width: 1190px;
+    margin: 0 auto;
+}
+
+header {
+    background-color: #111132;
+    height: 72px;
+    width: 100%;
+    position: sticky;
+    top: 0;
+    z-index: 5000;
+}
+
+.header {
+    padding: 9px 0;
+    display: flex;
+    align-items: center;
+}
+
+.listlink {
+    display: flex;
+}
+
+ul {
+    list-style: none;
+}
+
+.navlink{
+    text-decoration: none;
+    color: #FFFFFF;
+    margin-left: 45px;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.buystore {
+    display: flex;
+}
+
+.buy {
+    font-size: 40px;
+    font-weight: 700;
+    color: #111132;
+    background: #E4B224;
+    border-radius: 24px;
+    padding: 15px 30px;
+    margin-left: 12px;
+}
+
+.from {
+    font-size: 40px;
+    font-weight: 700;
+    padding: 15px 30px;
+    border-radius: 12px;
+    background: #555587;
+    color: #FFFFFF;
+    margin-left: 12px;
+}
+
+.online {
+    font-size: 40px;
+    font-weight: 700;
+    color: #FFFFFF;
+    padding: 15px 30px;
+    border: 3px solid #E4B224;
+    background: linear-gradient(0deg, rgba(17, 17, 50, 0.2), rgba(17, 17, 50, 0.2));
+    border-radius: 118.01px;
+    margin-left: 12px;
+}
+
+.store {
+    font-size: 40px;
+    font-weight: 700;
+    color: #111132;
+    border-radius: 18px;
+    box-shadow: 0px 0px 35px 0px #D3E05880;
+    background: #CFE14A;
+    padding: 15px 30px;
+    margin-left: 12px;
+}
+
+.buystorearrow {
+    background: #E4B224;
+    border-radius: 50%;
+    padding: 25px;
+    width: 25px;
+    height: 25px;
+    position: relative;
+    margin-left: 12px;
+}
+
+.fifthsection {
+    margin-top: 200px;
+}
+
+.g2 {
+    background: #FABD3E;
+    border-radius: 8px;
+    padding: 46px 90px 16px 65px;
+    width: 210px;
+}
+
+.arrowimg {
+    margin-top: -5px;
+    margin-left: -4px;
+}
+
+.smallarrow {
+    margin-left: 14px;
+    margin-top: 18px;
+    position: absolute;
+}
+
+.kinguin {
+    background: #FABD3E;
+    border-radius: 8px;
+    padding: 46px 90px 16px 65px;
+    width: 210px;
+    margin-left: 24px;
+}
+
+.wherebuy {
+    display: flex;
+    margin-top: 100px;
+}
+
+
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 34px;
+}
+
+.footerlink a{
+    margin-left: 24px;
+    text-decoration: none;
+    color: #FFFFFF;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.spanimg {
+    display: flex;
+    margin-top: 27px;
+}
+
+.buystorearrow {
+    margin-top: -15px;
+}
+
+.buystoreblocks {
+    display: flex;
+}
+
+.buystoresecondblock {
+    margin-left: 680px;
+    position: absolute;
+    margin-top: -140px;
+}
+
+.mobileimg {
+    display: none;
+}
+
+.starmobile {
+    display: none;
+}
+
+.howtoactivateaboutimgmobile {
+    display: none;
+}
+
+.buystoresecondblockmobile {
+    display: none;
+}
+
+.burgermenu {
+    position: relative;
+    width: 20px;
+    height: 15px;
+    border: none;
+    background-color: transparent;
+    margin-right: 19px;
+    display: none;
+}
+
+.burgermenu span {
+    position: absolute;
+    width: 1.25rem;
+    height: 2px;
+    background-color: #FFFFFF;
+    left: 6%;
+    transition: background-color .3s ,opacity .3s, transform .25s;
+    will-change: transform;
+}
+
+.burgermenu span:nth-child(1) {
+    transform: translateY(-6px);
+}
+
+.burgermenu span:nth-child(2) {
+    transform: translateY(-1px);
+}
+
+.burgermenu span:nth-child(3) {
+    transform: translateY(4px);
+}
+
+/*Крестик*/
+
+.header.open .burgermenu span:nth-child(1) {
+    transform: translateY(0) rotate(45deg);
+}
+
+.header.open .burgermenu span:nth-child(2) {
+    opacity: 0;
+}
+
+.header.open .burgermenu span:nth-child(3) {
+    transform: translateY(0px) rotate(-45deg);
+}
+
+@media (min-width:360px) and (max-width:1188px) {
+
+    .wrapper {
+        width: 328px;
+        margin: 0 auto;
+    }
+
+    .logo {
+        width: 83px;
+        height: 15.8px;
+        margin-top: 4px;
+    }
+
+    header {
+        background-color: #051C2C;
+        height: 40px;
+        width: 100%;
+        position: sticky;
+        top: 0;
+        z-index: 5000;
+    }
+    
+    .fifthsection {
+        padding-top: 45px;
+        margin-top: 0;
+    }
+
+    .buy {
+        font-size: 24px;
+        font-weight: 700;
+        color: #111132;
+        background: #E4B224;
+        border-radius: 24px;
+        padding: 8px 16px;
+        margin-left: 0px;
+    }
+
+    .from {
+        font-size: 24px;
+        font-weight: 700;
+        color: #FFFFFF;
+        background: #555587;
+        border-radius: 12px;
+        padding: 8px 16px;
+        margin-left: 5px;
+    }
+
+    .online {
+        font-size: 24px;
+        font-weight: 700;
+        color: #FFFFFF;
+        padding: 8px 16px;
+        border: 1px solid #E4B224;
+        background: linear-gradient(0deg, rgba(17, 17, 50, 0.2), rgba(17, 17, 50, 0.2));
+        border-radius: 118.01px;
+        margin-left: 0;
+    }
+
+    .store {
+        font-size: 24px;
+        font-weight: 700;
+        color: #111132;
+        border-radius: 18px;
+        box-shadow: 0px 0px 35px 0px #D3E05880;
+        background: #CFE14A;
+        padding: 8px 16px;
+        margin-left: 5px;
+    }
+
+    .buystorearrow img{
+        display: block;
+        width: 18px;
+        height: 18px;
+    }
+    
+    .buystorearrow {
+        background: #E4B224;
+        border-radius: 50%;
+        padding: 10px;
+        width: 18px;
+        height: 18px;
+        position: relative;
+        margin-left: 5px;
+        margin-top: -7px;
+    }
+
+    .arrowimg {
+        margin-top: 0px; 
+        margin-left: 0px; 
+    }
+
+    .buystoresecondblock {
+        display: none;
+    }
+
+    .buystoresecondblockmobile {
+        display: block;
+    }
+
+    .buystoresecondblockmobile img {
+        width: 253px;
+        height: 282px;
+        margin-left: 52px;
+        margin-top: 50px;
+    }
+
+    .fifthsection {
+        background-image: url(./img/fifthstar.png);
+        background-repeat: no-repeat;
+        background-position: right 0% bottom 50%;
+    }
+
+    .g2 {
+        background: #FABD3E;
+        border-radius: 8px;
+        padding: 23px 44px 9px 26px;
+    }
+
+    .kinguin {
+        background: #FABD3E;
+        border-radius: 8px;
+        padding: 23px 40px 9px 26px;
+        margin-left: 16px;
+    }
+
+    .g2img {
+        width: 82.45px;
+        height: 23.39px;
+    }
+
+    .kinguinimg {
+        width: 90px;
+        height: 31px;
+        margin-top: -7px;
+    }
+
+    .smallarrow {
+        width: 11.18px;
+        height: 7.51px;
+        margin-top: 9px;
+    }
+
+    footer {
+        margin-top: 29.42px;
+        height: 63px;
+    }
+
+    .wherebuy {
+        margin-top: 35px;
+    }
+
+    .footer img {
+        display: none;
+    }
+
+    .footerlink a {
+        margin-left: 60px;
+        text-decoration: none;
+        color: #FFFFFF;
+        font-size: 12px;
+        font-weight: 500;
+        text-align: center;
+    }
+
+    .footer {
+        padding-top: 21px;
+    }
+
+    .burgermenu {
+        display: block;
+    }
+
+    .nav {
+        position: fixed;
+        top: 0;
+        background-color: #1c1c21;
+        margin-top: 39px;
+        width: 100%;
+        height: 100%;
+        right: -100%;
+        visibility: hidden;
+        overflow: auto;
+        transition: transform .5s, visibility .5s;
+    }
+
+    .navlink{
+        text-decoration: none;
+        color: #FFFFFF;
+        margin-left: 0px;
+        font-size: .875rem;
+        font-weight: 500;
+    }
+
+    .listlink {
+        display: block;
+        padding-left: 16px;
+    }
+
+    .listlink li{
+        margin-bottom: 15px;
+    }
+
+    .header {
+        justify-content: space-between;
+    }
+
+    header .wrapper {
+        width: 100%;
+    }
+
+    .header.open .nav {
+        transform: translateX(-100%);
+        visibility: visible;
+    }
+
+    body.lock {
+        overflow: hidden;
+    }
+
+    body {
+        background-image: none;
+    }
+
+}
+
+@media (max-width:360px) {
+
+    body {
+        background-image: none;
+    }
+
+    .wrapper {
+        width: 320px;
+        margin: 0 auto;
+    }
+
+    .logo {
+        width: 83px;
+        height: 15.8px;
+        margin-top: 4px;
+    }
+
+    header {
+        background-color: #051C2C;
+        height: 40px;
+        width: 100%;
+        position: sticky;
+        top: 0;
+        z-index: 5000;
+    }
+    
+    .fifthsection {
+        padding-top: 45px;
+        margin-top: 0;
+    }
+
+    .buy {
+        font-size: 24px;
+        font-weight: 700;
+        color: #111132;
+        background: #E4B224;
+        border-radius: 24px;
+        padding: 8px 16px;
+        margin-left: 0px;
+    }
+
+    .from {
+        font-size: 24px;
+        font-weight: 700;
+        color: #FFFFFF;
+        background: #555587;
+        border-radius: 12px;
+        padding: 8px 16px;
+        margin-left: 5px;
+    }
+
+    .online {
+        font-size: 24px;
+        font-weight: 700;
+        color: #FFFFFF;
+        padding: 8px 16px;
+        border: 1px solid #E4B224;
+        background: linear-gradient(0deg, rgba(17, 17, 50, 0.2), rgba(17, 17, 50, 0.2));
+        border-radius: 118.01px;
+        margin-left: 0;
+    }
+
+    .store {
+        font-size: 24px;
+        font-weight: 700;
+        color: #111132;
+        border-radius: 18px;
+        box-shadow: 0px 0px 35px 0px #D3E05880;
+        background: #CFE14A;
+        padding: 8px 16px;
+        margin-left: 5px;
+    }
+
+    .buystorearrow img{
+        display: block;
+        width: 18px;
+        height: 18px;
+    }
+    
+    .buystorearrow {
+        background: #E4B224;
+        border: none;
+        border-radius: 50%;
+        padding: 10px;
+        width: 18px;
+        height: 18px;
+        position: relative;
+        margin-left: 5px;
+        margin-top: -7px;
+    }
+
+    .arrowimg {
+        margin-top: 0px; 
+        margin-left: 0px; 
+    }
+
+    .buystoresecondblock {
+        display: none;
+    }
+
+    .buystoresecondblockmobile {
+        display: block;
+    }
+
+    .buystoresecondblockmobile img {
+        width: 253px;
+        height: 282px;
+        margin-left: 52px;
+        margin-top: 50px;
+    }
+
+    .fifthsection {
+        background-image: url(./img/fifthstar.png);
+        background-repeat: no-repeat;
+        background-position: right 0% bottom 50%;
+    }
+
+    .g2 {
+        background: #FABD3E;
+        border-radius: 8px;
+        padding: 23px 36px 9px 26px;
+    }
+
+    .kinguin {
+        background: #FABD3E;
+        border-radius: 8px;
+        padding: 23px 40px 9px 26px;
+        margin-left: 16px;
+    }
+
+    .g2img {
+        width: 82.45px;
+        height: 23.39px;
+    }
+
+    .kinguinimg {
+        width: 90px;
+        height: 31px;
+        margin-top: -7px;
+    }
+
+    .smallarrow {
+        width: 11.18px;
+        height: 7.51px;
+        margin-top: 9px;
+    }
+
+    footer {
+        margin-top: 29.42px;
+        height: 63px;
+    }
+
+    .wherebuy {
+        margin-top: 35px;
+    }
+
+    .footer img {
+        display: none;
+    }
+
+    .footerlink a {
+        margin-left: 60px;
+        text-decoration: none;
+        color: #FFFFFF;
+        font-size: 12px;
+        font-weight: 500;
+        text-align: center;
+    }
+
+    .footer {
+        padding-top: 21px;
+    }
+
+    .burgermenu {
+        display: block;
+    }
+
+    .nav {
+        position: fixed;
+        top: 0;
+        background-color: #1c1c21;
+        margin-top: 39px;
+        width: 100%;
+        height: 100%;
+        right: -100%;
+        visibility: hidden;
+        overflow: auto;
+        transition: transform .5s, visibility .5s;
+    }
+
+    .navlink{
+        text-decoration: none;
+        color: #FFFFFF;
+        margin-left: 0px;
+        font-size: .875rem;
+        font-weight: 500;
+    }
+
+    .listlink {
+        display: block;
+        padding-left: 16px;
+    }
+
+    .listlink li{
+        margin-bottom: 15px;
+    }
+
+    .header {
+        justify-content: space-between;
+    }
+
+    header .wrapper {
+        width: 100%;
+    }
+
+    .header.open .nav {
+        transform: translateX(-100%);
+        visibility: visible;
+    }
+
+    body.lock {
+        overflow: hidden;
+    }
+}

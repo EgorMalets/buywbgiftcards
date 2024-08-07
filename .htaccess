@@ -1,0 +1,9 @@
+RewriteEngine On
+RewriteBase /
+
+RewriteCond %{REQUEST_URI} \.(otf|eot|ttf|woff|woff2)$
+RewriteRule ^(.*)$ $1 [L,QSA]
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_URI} !^/res/
+RewriteRule . index.php [L]
